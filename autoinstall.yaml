@@ -5,10 +5,19 @@ autoinstall:
 
   interactive-sections:
     - storage
-    - identity
 
   packages:
     - ubuntu-desktop
+    - ibus-mozc
+    - mozc-data
+    - mozc-utils-gui
+    - build-essential
+    - neovim
+    - git
+    - gh
+    - tmux
+    - curl
+
 
   snaps:
     - name: firefox
@@ -26,3 +35,6 @@ autoinstall:
     install-server: true
     allow-pw: true
 
+  user-data:
+    users: ['']
+    hostname: ubuntu-vmware
