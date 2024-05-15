@@ -11,7 +11,7 @@ autoinstall:
     - ubuntu-desktop
 
   snaps:
-    - name: firefox-esr
+    - name: firefox
       channel: esr/stable
     - name: snap-store
     - name: snapd-desktop-integration
