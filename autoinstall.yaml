@@ -1,0 +1,31 @@
+#cloud-config
+
+autoinstall:
+  version: 1
+
+  interactive-sections:
+    - storage
+
+  packages:
+    - ubuntu-desktop
+
+  snaps:
+    - name: firefox-esr
+      channel: esr/stable
+    - name: snap-store
+    - name: snapd-desktop-integration
+    - name: gtk-common-themes
+
+  codecs:
+    install: true
+
+  timezone: "Asia/Tokyo"
+
+  identity:
+    username: atolycs
+    hostname: vm-ubuntu
+
+  ssh:
+    install-server: true
+    allow-pw: true
+
