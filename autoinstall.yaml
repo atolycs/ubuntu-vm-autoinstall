@@ -5,6 +5,7 @@ autoinstall:
 
   interactive-sections:
     - storage
+    - identity
 
   packages:
     - ubuntu-desktop
@@ -20,10 +21,6 @@ autoinstall:
     install: true
 
   timezone: "Asia/Tokyo"
-
-  identity:
-    username: atolycs
-    hostname: vm-ubuntu
 
   ssh:
     install-server: true
