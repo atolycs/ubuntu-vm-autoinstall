@@ -1,0 +1,33 @@
+#cloud-config
+
+autoinstall:
+  version: 1
+
+  refresh-installer:
+    update: true
+
+  interactive-sections:
+    - storage
+
+  packages:
+    - build-essential
+    - neovim
+    - git
+    - gh
+    - tmux
+    - curl
+    - whois
+
+  codecs:
+    install: true
+
+  timezone: "Asia/Tokyo"
+
+  ssh:
+    install-server: true
+    allow-pw: true
+
+  identity:
+    username: atolycs
+    password: '$y$j9T$huUTDK67ERRZpj3lPIeTk0$P5tTafsDd5iYT.PRhQF4Z.TBAgFnsS38SQ5urzLjgoB'
+    hostname: ubuntu
