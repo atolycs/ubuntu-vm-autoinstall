@@ -18,7 +18,6 @@ autoinstall:
     - tmux
     - curl
 
-
   snaps:
     - name: firefox
       channel: esr/stable
@@ -37,4 +36,4 @@ autoinstall:
 
   user-data:
     users: ['']
-    hostname: ubuntu-vmware
+    hostname: ubuntu-ai
