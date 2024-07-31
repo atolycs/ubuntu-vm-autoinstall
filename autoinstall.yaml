@@ -20,7 +20,7 @@ autoinstall:
 
   snaps:
     - name: firefox
-      channel: esr/stable
+      channel: "esr/stable"
     - name: snap-store
     - name: snapd-desktop-integration
     - name: gtk-common-themes
