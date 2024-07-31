@@ -6,9 +6,6 @@ autoinstall:
   interactive-sections:
     - storage
 
-  refresh-installer: 
-    update: true
-
   packages:
     - ubuntu-desktop
     - ibus-mozc
