@@ -12,7 +12,6 @@ autoinstall:
     - mozc-data
     - mozc-utils-gui
     - build-essential
-    - neovim
     - git
     - gh
     - tmux
@@ -20,10 +19,13 @@ autoinstall:
 
   snaps:
     - name: firefox
-      channel: "esr/stable"
+      channel: esr/stable
     - name: snap-store
     - name: snapd-desktop-integration
     - name: gtk-common-themes
+    - name: nvim
+      classic: true
+
 
   codecs:
     install: true
