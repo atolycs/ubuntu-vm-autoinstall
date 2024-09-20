@@ -3,6 +3,9 @@
 autoinstall:
   version: 1
 
+  source: 
+    id: ubuntu-desktop-minimal
+
   interactive-sections:
     - storage
 
