@@ -21,8 +21,8 @@ autoinstall:
     - curl
 
   snaps:
-    - name: firefox
-      channel: esr/stable
+    # - name: firefox
+    #   channel: esr/stable
     - name: snap-store
     - name: snapd-desktop-integration
     - name: gtk-common-themes
@@ -39,6 +39,9 @@ autoinstall:
     install-server: true
     allow-pw: true
 
+  late-commands:
+    - curtin in-target -- snap remove firefox
+    - curtin in-target -- snap install firefox --channel=esr/stable
   user-data:
     users: ['']
     hostname: ubuntu-ai
